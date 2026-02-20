@@ -12,8 +12,10 @@ const Pokedex = () => {
             try {
                 setLoading(true)
                 const response = await axios.get("https://pokeapi.deno.dev/pokemon?limit=1000")
+                //const response = await axios.get("https://rickandmortyapi.com") * no me funciono, no se porque, pero el pokemon si
                 console.log(response.data)
                 setPokemons(response.data)
+                // setPokemons(response.data.results) * esto es para  rick and morty tiene esa estructura, por eso no me funciono
             }
             catch (err) {
                 console.log(err)

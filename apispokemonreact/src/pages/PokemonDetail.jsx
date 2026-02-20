@@ -13,6 +13,7 @@ const PokemonDetail = () => {
         const fetchPokemonUnique = async () => {
             try {
                 const response = await axios.get(`https://pokeapi.deno.dev/pokemon/${id}`)
+                
                 console.log(response?.data)
                 setPokemonUnique(response?.data)
             }

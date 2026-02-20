@@ -8,6 +8,7 @@ const PokemonCard = ({ poke }) => {
             <div className="rounded-xl bg-white shadow-lg p-5 flex flex-col justify-center items-center gap-2 px-10">
                 <img
                     src={poke.imageUrl}
+                    //src={poke.image} * esto es para rick and morty tiene esa estructura, por  no me funciono
                     alt="Pokemon"
                     className="w-40 h-40 object-contain"
                 />
